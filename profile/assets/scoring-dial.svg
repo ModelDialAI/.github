@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">ModelDial 综合分：五个维度按公开权重加权</title>
+  <desc id="desc">表盘一圈为 100 分，按权重切成五段：知识推理 35%、后端工程 20%、前端交互 20%、视觉审美 15%、可维护性 10%。各维度满分 100，在自建私有评测集上实测，按思考档位分别记录，并附评测耗时与参考费用。</desc>
+  <rect width="1200" height="500" rx="24" fill="#07070b"/>
+
+  <g id="weight-dial">
+    <path d="M291.2 74.4L291.6 68.4M302.3 75.4L303.1 69.5M313.4 77.2L314.5 71.3M324.3 79.6L325.8 73.8M335.0 82.7L338.7 71.3M345.5 86.5L347.7 80.9M355.8 90.9L358.3 85.5M365.8 96.0L368.6 90.8M375.4 101.7L378.6 96.6M384.6 108.0L391.7 98.3M393.5 114.8L397.3 110.2M401.8 122.2L406.0 117.9M409.8 130.2L414.1 126.0M417.2 138.5L421.8 134.7M424.0 147.4L433.7 140.3M430.3 156.6L435.4 153.4M436.0 166.2L441.2 163.4M441.1 176.2L446.5 173.7M445.5 186.5L451.1 184.3M449.3 197.0L460.7 193.3M452.4 207.7L458.2 206.2M454.8 218.6L460.7 217.5M456.6 229.7L462.5 228.9M457.6 240.8L463.6 240.4M458.0 252.0L470.0 252.0M457.6 263.2L463.6 263.6M456.6 274.3L462.5 275.1M454.8 285.4L460.7 286.5M452.4 296.3L458.2 297.8M449.3 307.0L460.7 310.7M445.5 317.5L451.1 319.7M441.1 327.8L446.5 330.3M436.0 337.8L441.2 340.6M430.3 347.4L435.4 350.6M417.2 365.5L421.8 369.3M409.8 373.8L414.1 378.0M401.8 381.8L406.0 386.1M393.5 389.2L397.3 393.8M384.6 396.0L391.7 405.7M375.4 402.3L378.6 407.4M365.8 408.0L368.6 413.2M355.8 413.1L358.3 418.5M345.5 417.5L347.7 423.1M335.0 421.3L338.7 432.7M324.3 424.4L325.8 430.2M313.4 426.8L314.5 432.7M302.3 428.6L303.1 434.5M291.2 429.6L291.6 435.6M280.0 430.0L280.0 442.0M268.8 429.6L268.4 435.6M257.7 428.6L256.9 434.5M246.6 426.8L245.5 432.7M235.7 424.4L234.2 430.2M214.5 417.5L212.3 423.1M204.2 413.1L201.7 418.5M194.2 408.0L191.4 413.2M184.6 402.3L181.4 407.4M175.4 396.0L168.3 405.7M166.5 389.2L162.7 393.8M158.2 381.8L154.0 386.1M150.2 373.8L145.9 378.0M142.8 365.5L138.2 369.3M136.0 356.6L126.3 363.7M129.7 347.4L124.6 350.6M124.0 337.8L118.8 340.6M118.9 327.8L113.5 330.3M114.5 317.5L108.9 319.7M110.7 307.0L99.3 310.7M107.6 296.3L101.8 297.8M105.2 285.4L99.3 286.5M103.4 274.3L97.5 275.1M102.4 263.2L96.4 263.6M102.4 240.8L96.4 240.4M103.4 229.7L97.5 228.9M105.2 218.6L99.3 217.5M107.6 207.7L101.8 206.2M110.7 197.0L99.3 193.3M114.5 186.5L108.9 184.3M118.9 176.2L113.5 173.7M124.0 166.2L118.8 163.4M129.7 156.6L124.6 153.4M136.0 147.4L126.3 140.3M142.8 138.5L138.2 134.7M150.2 130.2L145.9 126.0M158.2 122.2L154.0 117.9M166.5 114.8L162.7 110.2M184.6 101.7L181.4 96.6M194.2 96.0L191.4 90.8M204.2 90.9L201.7 85.5M214.5 86.5L212.3 80.9M225.0 82.7L221.3 71.3M235.7 79.6L234.2 73.8M246.6 77.2L245.5 71.3M257.7 75.4L256.9 69.5M268.8 74.4L268.4 68.4" stroke="#2f3240" stroke-width="2" stroke-linecap="round"/>
+    <path d="M280.0 76.0L280.0 52.0M422.4 355.5L441.8 369.6M225.6 419.4L218.2 442.2M104.0 252.0L80.0 252.0M176.5 109.6L162.4 90.2" stroke="#b6ff3b" stroke-width="3" stroke-linecap="round"/>
+    <path d="M288.5 102.2A150 150 0 0 1 406.1 333.2" fill="none" stroke="#b6ff3b" stroke-opacity="1" stroke-width="24"/>
+    <path d="M396.2 346.9A150 150 0 0 1 241.8 397.1" fill="none" stroke="#b6ff3b" stroke-opacity="0.72" stroke-width="24"/>
+    <path d="M225.7 391.8A150 150 0 0 1 130.2 260.5" fill="none" stroke="#b6ff3b" stroke-opacity="0.72" stroke-width="24"/>
+    <path d="M130.2 243.5A150 150 0 0 1 185.1 135.8" fill="none" stroke="#b6ff3b" stroke-opacity="0.5" stroke-width="24"/>
+    <path d="M198.8 125.9A150 150 0 0 1 271.5 102.2" fill="none" stroke="#b6ff3b" stroke-opacity="0.36" stroke-width="24"/>
+    <circle cx="280" cy="252" r="128" fill="none" stroke="#ffffff" stroke-opacity="0.06"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" font-weight="700" fill="#c9cdd9" text-anchor="middle">
+      <text x="374.4" y="209.9">35</text>
+      <text x="312.8" y="358.8">20</text>
+      <text x="194.2" y="320.3">20</text>
+      <text x="185.6" y="209.9">15</text>
+      <text x="247.2" y="157.2">10</text>
+    </g>
+    <text x="280" y="256" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="34" font-weight="800" fill="#f4f5f8">综合分</text>
+    <text x="280" y="288" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#8a8fa3">满分 100 · 五轴加权</text>
+  </g>
+
+  <g id="axes" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="548" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="2.5" fill="#8a8fa3">MODELDIAL.COM · 私有评测集实测</text>
+    <text x="546" y="128" font-size="36" font-weight="800" letter-spacing="-0.5" fill="#f4f5f8">一个综合分，拆成五个维度</text>
+    <rect x="548" y="179" width="6" height="22" rx="3" fill="#b6ff3b" fill-opacity="1"/>
+    <text x="570" y="196" font-size="21" font-weight="700" fill="#f4f5f8">知识推理</text>
+    <text x="676" y="196" font-size="17" fill="#8a8fa3">跨学科专业知识与复杂问题求解</text>
+    <text x="1136" y="196" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#b6ff3b">35%</text>
+    <path d="M548 218H1136" stroke="#ffffff" stroke-opacity="0.06"/>
+    <rect x="548" y="233" width="6" height="22" rx="3" fill="#b6ff3b" fill-opacity="0.72"/>
+    <text x="570" y="250" font-size="21" font-weight="700" fill="#f4f5f8">后端工程</text>
+    <text x="676" y="250" font-size="17" fill="#8a8fa3">服务逻辑、异常处理与测试验证</text>
+    <text x="1136" y="250" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#b6ff3b">20%</text>
+    <path d="M548 272H1136" stroke="#ffffff" stroke-opacity="0.06"/>
+    <rect x="548" y="287" width="6" height="22" rx="3" fill="#b6ff3b" fill-opacity="0.72"/>
+    <text x="570" y="304" font-size="21" font-weight="700" fill="#f4f5f8">前端交互</text>
+    <text x="676" y="304" font-size="17" fill="#8a8fa3">界面功能、交互行为与状态反馈</text>
+    <text x="1136" y="304" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#b6ff3b">20%</text>
+    <path d="M548 326H1136" stroke="#ffffff" stroke-opacity="0.06"/>
+    <rect x="548" y="341" width="6" height="22" rx="3" fill="#b6ff3b" fill-opacity="0.5"/>
+    <text x="570" y="358" font-size="21" font-weight="700" fill="#f4f5f8">视觉审美</text>
+    <text x="676" y="358" font-size="17" fill="#8a8fa3">构图层次、字体排版、色彩与控件质感</text>
+    <text x="1136" y="358" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#b6ff3b">15%</text>
+    <path d="M548 380H1136" stroke="#ffffff" stroke-opacity="0.06"/>
+    <rect x="548" y="395" width="6" height="22" rx="3" fill="#b6ff3b" fill-opacity="0.36"/>
+    <text x="570" y="412" font-size="21" font-weight="700" fill="#f4f5f8">可维护性</text>
+    <text x="676" y="412" font-size="17" fill="#8a8fa3">源码可读性、模块组织与后续修改成本</text>
+    <text x="1136" y="412" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#b6ff3b">10%</text>
+    <path d="M548 434H1136" stroke="#ffffff" stroke-opacity="0.06"/>
+    <text x="548" y="480" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#6f7489">同一模型按思考档位分别实测 · 附评测耗时与参考费用</text>
+  </g>
+</svg>
