@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">一局评测如何保证同题同规则</title>
+  <desc id="desc">题目只生成一次并冻结；每个模型拿到一份独立副本，在自己的会话里通过工具调用推进，调用预算由运行时按输出顺序统一扣除；所有动作写入带序号和时间戳的事件日志，实时舞台、回放、日志复核和排行榜都从这份日志读取。</desc>
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" fill-opacity="0.022"/>
+    </pattern>
+  </defs>
+
+  <!-- ink plate with the broadcast corner cut -->
+  <path d="M0 0H1172L1200 28V360H28L0 332Z" fill="#07070b"/>
+  <path d="M0 0H1172L1200 28V360H28L0 332Z" fill="url(#scan)"/>
+  <path d="M0.5 0.5H1171.8L1199.5 28.2V359.5H28.2L0.5 331.8Z" fill="none" stroke="#f4f6f0" stroke-opacity="0.18"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <!-- connectors -->
+    <g fill="none" stroke="#3a3d46" stroke-width="2">
+      <path d="M268 180C292 180 290 122 316 122"/>
+      <path d="M268 180H316"/>
+      <path d="M268 180C292 180 290 238 316 238"/>
+      <path d="M716 122C740 122 738 180 764 180"/>
+      <path d="M716 180H764"/>
+      <path d="M716 238C740 238 738 180 764 180"/>
+      <path d="M964 180C984 180 984 102 1004 102"/>
+      <path d="M964 180C984 180 984 154 1004 154"/>
+      <path d="M964 180C984 180 984 206 1004 206"/>
+      <path d="M964 180C984 180 984 258 1004 258"/>
+    </g>
+
+    <!-- 01 frozen episode -->
+    <g id="frozen">
+      <path d="M48 102H252L268 118V258H64L48 242Z" fill="#101116" stroke="#f4f6f0" stroke-opacity="0.16"/>
+      <path d="M48 102H96L88 118H48Z" fill="#b6ff3b"/>
+      <text x="56" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#07070b">01</text>
+      <text x="72" y="166" font-size="26" font-weight="800" fill="#f4f6f0">冻结题面</text>
+      <text x="72" y="202" font-size="16" fill="#a3a8b0">种子 + 规则 → 题目</text>
+      <text x="72" y="228" font-size="16" fill="#a3a8b0">只生成一次，哈希锁定</text>
+    </g>
+
+    <!-- 02 isolated sessions -->
+    <g id="sessions">
+      <path d="M316 54H364L356 72H316Z" fill="#b6ff3b"/>
+      <text x="324" y="68" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#07070b">02</text>
+      <text x="376" y="70" font-size="20" font-weight="800" fill="#f4f6f0">每个模型一份独立会话</text>
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16">
+        <path d="M316 98H706L716 108V146H326L316 136Z" fill="#101116" stroke="#b6ff3b" stroke-opacity="0.55"/>
+        <text x="334" y="128" fill="#d9dcd4">模型 A</text>
+        <path d="M420 114V130" stroke="#b6ff3b" stroke-width="4"/>
+        <path d="M640 110H700L694 134H634Z" fill="#b6ff3b"/>
+        <text x="667" y="128" text-anchor="middle" font-size="14" font-weight="700" fill="#07070b">完成</text>
+
+        <path d="M316 156H706L716 166V204H326L316 194Z" fill="#101116" stroke="#f4f6f0" stroke-opacity="0.16"/>
+        <text x="334" y="186" fill="#d9dcd4">模型 B</text>
+        <path d="M420 176V184M430 176V184M440 176V184M450 176V184M460 172V188M470 170V190M480 176V184M490 176V184M500 176V184M510 172V188M520 176V184M530 176V184M540 176V184M550 176V184" stroke="#5a5e68" stroke-width="4"/>
+        <path d="M560 172V188" stroke="#b6ff3b" stroke-width="4"/>
+        <path d="M640 168H700L694 192H634Z" fill="#b6ff3b"/>
+        <text x="667" y="186" text-anchor="middle" font-size="14" font-weight="700" fill="#07070b">完成</text>
+
+        <path d="M316 214H706L716 224V262H326L316 252Z" fill="#101116" stroke="#ff3d6e" stroke-opacity="0.6"/>
+        <text x="334" y="244" fill="#d9dcd4">模型 C</text>
+        <path d="M420 234V242M430 234V242M440 230V246M450 234V242M460 234V242M470 234V242M480 230V246M490 234V242M500 234V242M510 234V242M520 234V242M530 234V242M540 234V242M550 234V242M560 234V242M570 234V242M580 234V242M590 234V242" stroke="#5a5e68" stroke-width="4"/>
+        <path d="M612 226H700L694 250H606Z" fill="#ff3d6e"/>
+        <text x="653" y="244" text-anchor="middle" font-size="14" font-weight="700" fill="#07070b">预算用尽</text>
+      </g>
+      <text x="316" y="300" font-size="16" fill="#a3a8b0">运行时按模型输出顺序扣调用预算；</text>
+      <text x="316" y="326" font-size="16" fill="#a3a8b0">模型只拿到公开观察，看不到种子、最优解和其他模型。</text>
+    </g>
+
+    <!-- 03 event log -->
+    <g id="event-log">
+      <path d="M764 102H948L964 118V258H780L764 242Z" fill="#101116" stroke="#f4f6f0" stroke-opacity="0.16"/>
+      <path d="M764 102H812L804 118H764Z" fill="#b6ff3b"/>
+      <text x="772" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" font-weight="700" fill="#07070b">03</text>
+      <text x="788" y="166" font-size="26" font-weight="800" fill="#f4f6f0">事件日志</text>
+      <text x="788" y="202" font-size="16" fill="#a3a8b0">连续序号 + 时间戳</text>
+      <text x="788" y="228" font-size="16" fill="#a3a8b0">原子落盘，可导出</text>
+    </g>
+
+    <!-- outputs: angled broadcast tags -->
+    <g id="outputs" font-size="17" font-weight="700">
+      <path d="M1014 82H1162L1152 122H1004Z" fill="#b6ff3b"/>
+      <text x="1083" y="108" text-anchor="middle" fill="#07070b">实时舞台</text>
+      <path d="M1014 134H1162L1152 174H1004Z" fill="#16171d" stroke="#f4f6f0" stroke-opacity="0.2"/>
+      <text x="1083" y="160" text-anchor="middle" fill="#f4f6f0">回放</text>
+      <path d="M1014 186H1162L1152 226H1004Z" fill="#16171d" stroke="#f4f6f0" stroke-opacity="0.2"/>
+      <text x="1083" y="212" text-anchor="middle" fill="#f4f6f0">日志复核</text>
+      <path d="M1014 238H1162L1152 278H1004Z" fill="#16171d" stroke="#f4f6f0" stroke-opacity="0.2"/>
+      <text x="1083" y="264" text-anchor="middle" fill="#f4f6f0">排行榜</text>
+    </g>
+  </g>
+</svg>
